@@ -26,7 +26,7 @@ function draw() {
 }
 
 function mousePressed() {
-  if ( song.isPlaying() ) { // .isPlaying() returns a boolean
+  if ( song.isPlaying() ) { 
     song.stop();
     background(242,242,242);
   } else {
