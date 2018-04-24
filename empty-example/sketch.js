@@ -5,7 +5,6 @@ function setup() {
 	function setup() {
   	song = loadSound('CIRCLE/2018_02_28_YEJIN_CHO_AUDIOPROJECT.MP3')
 	createCanvas(700, 700);
-	createCanvas(700, 700);
 }
 
 function draw() {
