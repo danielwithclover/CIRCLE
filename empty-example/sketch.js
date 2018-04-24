@@ -1,5 +1,6 @@
 var noiseScale=2;
 var xoff = 0.0;
+var song;
 
 function setup() {
   	song = loadSound('CIRCLE/2018_02_28_YEJIN_CHO_AUDIOPROJECT.MP3')
