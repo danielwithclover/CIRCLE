@@ -2,7 +2,6 @@ var noiseScale=2;
 var xoff = 0.0;
 
 function setup() {
-	function setup() {
   	song = loadSound('CIRCLE/2018_02_28_YEJIN_CHO_AUDIOPROJECT.MP3')
 	createCanvas(700, 700);
 }
@@ -33,5 +32,5 @@ function mousePressed() {
     song.play();
     background(0,0,0);
   }
-}
+
 
