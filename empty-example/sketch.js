@@ -1,0 +1,29 @@
+var noiseScale=2;
+var xoff = 0.0;
+
+function setup() {
+	createCanvas(700, 700);
+}
+
+function draw() {
+ 	background(242,242,242); 
+ 	for (var x=1; x < width; x++) {
+    var noiseVal = noise((mouseX+x)*noiseScale, mouseY*noiseScale);
+    stroke(noiseVal*255);
+    line(x, mouseY+noiseVal*0.02, x, height);
+  }
+  	  xoff = xoff + 0.09;
+  	var n = noise(xoff) * width;
+  	line(n, 0, n, height);
+ 	
+ 	noStroke(); 
+ 	fill(255,255,255);
+ 	smooth();
+	ellipse(mouseX,mouseY,20,20); 
+
+}
+
+function mousePressed() {
+  clear();
+}
+
